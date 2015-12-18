@@ -1,0 +1,188 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+	<title>Gestion d'un candidat</title>
+	<style>
+  body {
+      position: relative; 
+  }
+  #section1 {padding-top:90px;text-align: center;height:796px;color: ThreeDDarkShadow; background-color: lightgray;}
+  #section2 {padding-top:30px;text-align: center;height:796px;color: ThreeDDarkShadow; background-color: #F5F5F5;}
+  #section3 {padding-top:100px;text-align: center; height: 796px;color: ThreeDDarkShadow; background-color: lightgray;}
+  .thumbnail {background-color: #F5F5F5;}
+  nav {background-color: #F5F5F5;}
+  </style>
+</head>
+
+<body  data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar navbar-fixed-top" >
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span> 
+        </button>
+        <span class="navbar-brand">Espace-Moniteur</span>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+       <ul class="nav navbar-nav">
+    	<li>
+      		<a href="../Controleurs/Controleur_gestion_candidat.php">Gestion des candidats</a>
+   		 </li>
+		<li>
+      		<a href="Controleur_maintenance_moniteur.php">Gestion des plannings</a>
+   	    </li>
+       </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="Controleur_connexion.php"><span class="glyphicon glyphicon-log-out"></span> Deconnexion</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+	<div id="section1" class="container-fluid">	
+	  <center><h1>Liste des candidats</h1></center>
+	  <br/><br/>
+	 	<?php echo $Chaine;?>
+    </div>
+
+    <div id="section2" class="container-fluid">
+    <br/>
+    	<center><h1>Ajout d'un nouveau candidat</h1></center><br/><br/>
+
+		 <div class="row">
+		 <form class="form-horizontal"  role="form" method="post" action="Controleur_gestion_candidat.php">
+		  <div class="col-sm-2">
+		 </div>
+		  <div class="form-group">
+	         <input type="hidden" name="numclient"class="form-control" id="numcandidat">
+	      </div>
+	      <div class="col-sm-2">
+		 </div>
+	    <div class="form-group">
+	      <label class="control-label col-sm-2" for="nom">Nom :</label>
+	      <div class="col-sm-4">
+	      <input pattern="[A-Za-z]{2,20}" type="text" name="nomclient"class="form-control" id="nomcandidat" placeholder="Nom du candidat" required>
+	      </div>
+	    </div>
+	     <div class="col-sm-2">
+		 </div>
+	    <div class="form-group">
+	      <label class="control-label col-sm-2" for="prenom">Prenom :</label>
+	      <div class="col-sm-4">
+	      <input pattern="[A-Za-z]{2,20}" type="text" name="prenomclient" class="form-control" id="prenom" placeholder="Prenom du candidat" required>
+	      </div>
+	    </div>
+	     <div class="col-sm-2">
+		 </div>
+	    <div class="form-group">
+	      <label class="control-label col-sm-2" for="adresse">Adresse :</label>
+	      <div class="col-sm-4">
+	      <input type="text" name="adresseclient" class="form-control" id="adresse" placeholder="Enter l'adresse du candidat" required>
+	      </div>
+	    </div>
+	     <div class="col-sm-2">
+		 </div>
+	    <div class="form-group">
+	      <label class="control-label col-sm-2" for="datedenaissanceclient">Date de naissance :</label>
+	      <div class="col-sm-4">
+	      <input type="date" name="datedenaissanceclient" class="form-control" id="datedenaissanceclient" placeholder="Enter la date de naissance du candidat" required></div>	      
+	    </div>
+	     <div class="col-sm-2">
+		 </div>
+	    <div class="form-group">
+	      <label class="control-label col-sm-2" for="telephoneclient">N° Telephone :</label>
+	      <div class="col-sm-4">
+	      <input pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$" type="tel" name="telephoneclient" class="form-control" id="telephoneclient" placeholder="Entrer le N° tel du candidat" required>
+	    </div></div>
+	     <div class="col-sm-2">
+		 </div>
+	    <div class="form-group">
+	      <label class="control-label col-sm-2" for="mailclient">Adresse Mail :</label>
+	      <div class="col-sm-4">
+	      <input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" type="mail" name="mailclient" class="form-control" id="mailclient" placeholder="Enter le mail du candidat" required>
+	    </div></div>
+	     <div class="col-sm-2">
+		 </div>
+	    <div class="form-group">
+	      <label class="control-label col-sm-2" for="dateinscriptionclient">Date d'inscription :</label>
+	      <div class="col-sm-4">
+	      <input type="date" name="dateinscriptionclient" class="form-control" id="dateinscriptionclient" required>
+	    </div></div>
+	     <div class="col-sm-2">
+		 </div>
+	    <div class="form-group">
+	  	  <label class="control-label col-sm-2" for="sel1">Mode de facturation :</label>
+	  	  <div class="col-sm-4">
+	   	  <select class="form-control" name="modefacturation" id="modefacturation" required>
+		   <option value="cb"> Carte bancaire</option>
+		   <option value="esp"> Espèce</option>
+		   <option value="chq" selected> Chèque</option>
+	  	  </select>
+		</div></div>
+		 <div class="col-sm-2">
+		 </div>
+	    <div class="form-group">
+		  <label class="control-label col-sm-2" for="typecandidat"> Type du candidat:</label>
+		  <div class="col-sm-4">
+		  <select class="form-control" id="typecandidat" name="typecandidat" required>
+		    <option value="etudiant"> Etudiant</option>
+			<option value="salarier"> Salarier</option>		  	  
+		  </select>
+		</div></div>
+		 <div class="col-sm-2">
+		 </div>
+		 <br/>	    
+	    <button type="submit" name="inserer" class="btn btn-default" onclick="header.location:'moniteur.html'">Inserer</button>
+	    <button type="reset" name="annuler" class="btn btn-default">Annuler</button>
+	  </form>
+	  </div>
+	  <?php	
+	 if (isset($_POST['inserer']))
+			{
+				echo $notif;			
+			}
+	?>
+
+	</div>
+
+	<div id="section3" class="container-fluid">
+		<?php
+		
+		if ($modif != null) 
+		{
+			echo $modif;
+			echo $message;
+		}
+		if ($chaine != null) 
+		{
+			echo $chaine;
+		}
+
+			
+			
+			
+		?>
+
+	</div>
+    					
+<nav class="navbar navbar navbar-fixed-bottom"> 
+      <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="Controleur_maintenance_moniteur.php"><span class="glyphicon glyphicon-user"></span> Profil </a></li>  
+          <li><a> | </a></li>
+        </ul>
+      </div>
+    </div>
+     </nav>
+</body>
+</html>    
+		

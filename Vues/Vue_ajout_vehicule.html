@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<title>Ajout d'un vehicule</title>
+</head>
+<body>
+<h1>Ajout d'un vehicule</h1>
+	<div class="page">						
+		<form class="myform" method="post" action="../Controleurs/Controleur_ajout_vehicule.php">
+		<label for="marque">Marque :</label><input type="text" name="marque" id="marque" required></br></br>
+					<label for="model">Model :</label><input type="text" name="model" id="model" required></br></br>
+					<label for="annee">Année :</label><input type="text" name="annee" id="annee" required></br></br>
+					Type de vehicule :
+					<select name="typedevehicule">
+						<option value="1"> Voiture</option>
+						<option value="2"> Moto</option>						
+					</select></br></br>
+					<input type="submit" name="inserer" value="Inserer">
+				    <input type="reset" name="annuler" value="Annuler">				    
+				    </form>					    
+	</div>
+
+</body>
+</html>

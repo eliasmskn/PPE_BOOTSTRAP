@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Castellane-Auto</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      position: relative; 
+  }
+  #section1 {padding-top:90px;text-align: center;height:570px;color: ThreeDDarkShadow; background-color: #F5F5F5;}
+  #section2 {padding-top:30px;text-align: center;height:570px;color: #F5F5F5; background-color: #808080;}
+  #section3 {padding-top:90px;text-align: center;height:570px;color: ThreeDDarkShadow; background-color: #F5F5F5;}
+  #section2 .thumbnail {background-color: #F5F5F5;}
+  #section3 .thumbnail {background-color: #808080; color:#F5F5F5; text-align: center; height: 200px; padding-top: 50px;}
+  </style>
+</head>
+
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <nav class="navbar navbar-inverse navbar-fixed-top" >
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span> 
+        </button>
+        <span class="navbar-brand" >Castellane-Auto</span>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="Controleur_acceuil.php"><span class="glyphicon glyphicon-home"></span> Acceuil </a></li>
+          <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Nos Forfaits<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="Controleur_maintenance.php">Permis-A</a></li>
+            <li><a href="Controleur_maintenance.php">Permis-B</a></li>
+            <li><a href="Controleur_maintenance.php">BSR</a></li> 
+          </ul>
+          </li>
+          <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown">Nos Tarifs<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="Controleur_maintenance.php">Etudiant</a></li>
+            <li><a href="Controleur_maintenance.php">Salarié</a></li>
+            <li><a href="Controleur_maintenance.php">Autres</a></li> 
+          </ul>
+          <li><a href="Controleur_maintenance.php">Nos Coordonnées</a></li> 
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="../Controleurs/Controleur_connexion.php"><span class="glyphicon glyphicon-log-in"></span> Accés Moniteur </a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <div id="section1" class="container-fluid">
+  <u><h1>Castellane - Auto</h1></u><br/>
+  <p>Bienvenue sur notre site !</p><br/><br/>
+  <img src="../Images/A.png"; alt="";>
+</div>
+<div id="section2" class="container-fluid">
+  <u><h1>Nos Atouts</h1></u><br/>
+  <div class="row">
+    <div class="col-md-6">
+      <a  class="thumbnail">
+        <p>10 moniteurs diplômés d'état et suivant régulièrement des formations complémentaires.</p>    
+        <img src="../Images/diplome.png" alt="Pulpit Rock" style="width:150px;height:150px">
+      </a>
+    </div>
+    <div class="col-md-6">
+      <a  class="thumbnail">
+        <p>Une compétence pédagogique reconnue et inégalée sur le département.</p>
+        <img src="../Images/valide.png" alt="Moustiers Sainte Marie" style="width:150px;height:150px">
+      </a>
+    </div>
+  </div>  
+  <div class="row">  
+    <div class="col-md-6">
+      <a  class="thumbnail">
+        <p>Une offre trés divérsifiée de mode de facturation des leçons.</p>      
+        <img src="../Images/modefactu.png" alt="Cinque Terre" style="width:150px;height:150px">
+      </a>
+    </div>
+    <div class="col-md-6">
+      <a  class="thumbnail">
+        <p>Des véhicules neufs spécialement adaptés.</p>      
+        <img src="../Images/new4.png" alt="véhicules n" style="width:150px;height:150px">
+      </a>
+    </div> 
+  </div>
+</div>
+<div id="section3" class="container-fluid">
+  <u><h1>Notre Etablissement</h1><u><br/><br/>
+  <div class="row">
+    <div class="col-md-4">
+      <section  class="thumbnail">
+        <p>Un carnet de route personnel vous est remis lors de votre l'inscription.</p>    
+      </a>
+    </div>
+    <div class="col-md-4">
+      <section  class="thumbnail">
+        <p>Josianne et toute l'équipe du secretairiat, sauront vous mettre à l'aise, et déterminer avec vous le forfait convenant le mieux à vos horaires et disponibilités.</p>    
+      </a>
+    </div>
+    <div class="col-md-4">
+      <section  class="thumbnail">
+        <p>Une assistance révision vous est fournie avant de passer les épreuve du code.</p>
+      </a>
+    </div>
+  </div>  
+</div>
+
+
+
+     <footer class="navbar navbar-inverse navbar-fixed-bottom"> 
+        <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="../Controleurs/Controleur_contact.php"><span class="glyphicon glyphicon-envelope"></span> Nous Contacter </a></li>  
+          <li><a> | </a></li>
+        </ul>
+      </div>
+    </div>
+      </footer>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

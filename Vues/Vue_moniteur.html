@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+  <title>Gestion d'un candidat</title>
+  <style>
+  body {
+      position: relative; 
+        }
+  nav {background-color: #F5F5F5; }
+  </style>
+</head>
+
+<body  data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar navbar-fixed-top" >
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span> 
+        </button>
+        <span class="navbar-brand">Espace-Moniteur</span>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+       <ul class="nav navbar-nav">
+      <li>
+          <a href="../Controleurs/Controleur_gestion_candidat.php">Gestion des candidats</a>
+       </li>
+    <li>
+          <a href="Controleur_maintenance_moniteur.php">Gestion des plannings</a>
+        </li>
+       </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="Controleur_connexion.php"><span class="glyphicon glyphicon-log-out"></span> Deconnexion</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container">
+  </br></br></br></br></br></br></br></br>
+   <div class="jumbotron">
+  <h1>Espace Moniteur</h1>  
+  </br>
+  <p>Vous pouvez effectuer vos taches de gestion ici </p>
+  </div>
+              
+<nav class="navbar navbar navbar-fixed-bottom"> 
+      <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="Controleur_maintenance_moniteur.php"><span class="glyphicon glyphicon-user"></span> Profil </a></li>  
+          <li><a> | </a></li>
+        </ul>
+      </div>
+    </div>
+     </nav>
+</body>
+</html>    
+    

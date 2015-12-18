@@ -1,0 +1,8 @@
+CREATE VIEW vueconnexionmoniteur
+AS SELECT mailmoniteur, mdpmoniteur
+FROM moniteur;
+
+
+Select mdpmoniteur
+FROM moniteur
+WHERE mailmoniteur = 'elias@gmail.com';
